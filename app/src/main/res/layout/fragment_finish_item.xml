@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_bg_gray">
+
+    <RelativeLayout
+        android:id="@+id/rl_layout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/iv_file1"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginRight="12dp"
+            android:src="@mipmap/ic_launcher"
+            />
+
+        <TextView
+            android:id="@+id/tv_filename"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dp"
+            android:layout_marginTop="0dp"
+            android:layout_toRightOf="@+id/iv_file"
+            android:text="IMG_1280.MOV"
+            android:textColor="@color/threeblack"
+            android:textSize="15sp"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="1dp"
+            android:src="@mipmap/receive_ic"
+            />
+
+        <TextView
+            android:id="@+id/tv_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/tv_filename"
+            android:layout_marginTop="0dp"
+            android:text="12.46M/17.23M"
+            android:textColor="@color/ninegrey"
+            android:textSize="12sp"
+            />
+
+        <com.flowerbell.masschat.view.BackgroundProgress
+            android:id="@+id/pg_pass"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:layout_below="@id/tv_progress"
+            android:layout_marginTop="1dp"
+            android:layout_toRightOf="@+id/iv_file"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_layout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true">
+
+        <ImageView
+            android:id="@+id/iv_file2"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginRight="12dp"
+            android:src="@mipmap/ic_launcher"
+            />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="0dp"
+            android:layout_toRightOf="@+id/iv_file2"
+            android:singleLine="true"
+            android:text="张晓雅"
+            android:textColor="@color/threeblack"
+            android:textSize="15sp"
+            />
+
+        <TextView
+            android:id="@+id/tv_filename2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_name"
+            android:layout_marginBottom="0dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="0dp"
+            android:layout_toRightOf="@+id/iv_file2"
+            android:singleLine="true"
+            android:text="IMG_1280.MOV"
+            android:textColor="@color/threeblack"
+            android:textSize="15sp"
+            />
+
+
+        <TextView
+            android:id="@+id/tv_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="2dp"
+            android:text="17.23M"
+            android:textColor="@color/ninegrey"
+            android:textSize="12sp"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/tv_total"
+            android:layout_marginTop="9dp"
+            android:src="@mipmap/finish_ic"
+            />
+
+    </RelativeLayout>
+</RelativeLayout>
+
+
+
+

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+
+                android:id="@+id/rl_item"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:background="@drawable/click_list_item_bg"
+    >
+
+    <RelativeLayout
+        android:id="@+id/re_avatar"
+        android:layout_width="80dp"
+        android:layout_height="70dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true">
+
+        <ImageView
+            android:id="@+id/iv_avatar"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/head_img_default"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:layout_toRightOf="@id/re_avatar"
+        android:text="SteveJobs"
+        android:textColor="@color/threeblack"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/tv_distance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="11dp"
+        android:layout_marginLeft="11dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="8dp"
+        android:text="100米内"
+        android:textColor="@color/ninegrey"
+        android:textSize="13sp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_toRightOf="@id/re_avatar"
+        android:orientation="horizontal"
+        android:paddingRight="30dp">
+
+        <ImageView
+            android:id="@+id/msg_state"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@mipmap/msg_state_fail_resend"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/tv_signature"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="Stay hungry, Stay foolish"
+            android:textColor="@color/ninegrey"
+            android:textSize="13sp"/>
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/tv_unread"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignRight="@id/re_avatar"
+        android:layout_alignTop="@id/re_avatar"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="4dp"
+        android:background="@mipmap/chat_tip_ic"
+        android:gravity="center"
+        android:text="9"
+        android:textColor="#ffffff"
+        android:textSize="11sp"
+        android:visibility="gone"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="15dp"
+        android:background="#dadada"/>
+</RelativeLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#8289bd</color>
+    <color name="colorPrimaryDark">#8289bd</color>
+    <color name="colorAccent">#8289bd</color>
+    <color name="themecolor">#8289bd</color>
+    <color name="black">#ff000000</color>
+    <color name="darkblack">#555555</color>
+    <color name="threeblack">#333333</color>
+    <color name="ninegrey">#999999</color>
+    <color name="white">#FFFFFF</color>
+    <color name="red">#f40000</color>
+    <color name="window_gray">#f4f4f4</color>
+    <color name="linegrey">#e3e3e3</color>
+    <color name="my_btn_nomal">#FFFFFF</color>
+    <color name="my_btn_pressed">#F5F5F5</color>
+    <color name="title_grey">#808080</color>
+    <color name="gradient_start">#d09eff</color>
+    <color name="gradient_center">#ab94df</color>
+    <color name="gradient_end">#8289bd</color>
+</resources>

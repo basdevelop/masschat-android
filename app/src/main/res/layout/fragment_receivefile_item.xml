@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_bg_gray">
+
+    <RelativeLayout
+        android:id="@+id/rl_layout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/iv_file1"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginRight="12dp"
+            android:src="@mipmap/ic_launcher"
+            />
+
+        <TextView
+            android:id="@+id/tv_filename"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="0dp"
+            android:layout_toRightOf="@+id/iv_file1"
+            android:singleLine="true"
+            android:text="IMG_1280.MOV"
+            android:textColor="@color/threeblack"
+            android:textSize="15sp"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="1dp"
+            android:src="@mipmap/receive_ic"
+            />
+
+        <TextView
+            android:id="@+id/tv_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/tv_filename"
+            android:layout_marginTop="0dp"
+            android:text="12.46M/17.23M"
+            android:textColor="@color/ninegrey"
+            android:textSize="12sp"
+            />
+
+        <com.flowerbell.masschat.view.BackgroundProgress
+            android:id="@+id/pg_pass"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:layout_below="@id/tv_progress"
+            android:layout_marginTop="1dp"
+            android:layout_toRightOf="@+id/iv_file1"/>
+    </RelativeLayout>
+
+    <include
+        layout="@layout/fragment_finish_item"
+        android:visibility="gone"
+        />
+
+</RelativeLayout>
+
+
+
+

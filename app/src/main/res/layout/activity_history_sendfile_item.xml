@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/rl_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="15dp"
+    >
+
+    <ImageView
+        android:id="@+id/iv_head"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginRight="14dp"
+        android:src="@mipmap/head_img_default"
+        />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:layout_toRightOf="@+id/iv_head"
+        android:text="李四"
+        android:textColor="@color/threeblack"
+        android:textSize="15sp"
+        />
+
+    <TextView
+        android:id="@+id/tv_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_name"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="3dp"
+        android:layout_toRightOf="@+id/iv_head"
+        android:text="2017-06-11 09:31"
+        android:textColor="@color/ninegrey"
+        android:textSize="12sp"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_date"
+        android:layout_toRightOf="@+id/iv_head"
+        android:background="@drawable/shape_bg_gray">
+
+        <ImageView
+            android:id="@+id/iv_file"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginRight="12dp"
+            android:src="@mipmap/ic_launcher"
+            />
+
+        <TextView
+            android:id="@+id/tv_name2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="3dp"
+            android:layout_toRightOf="@+id/iv_file"
+            android:text="张晓雅"
+            android:textColor="@color/threeblack"
+            android:textSize="15sp"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/tv_name2"
+            android:src="@mipmap/send_ic"
+            />
+
+        <TextView
+            android:id="@+id/tv_filesize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="3dp"
+            android:text="12.22M"
+            android:textColor="@color/ninegrey"
+            android:textSize="13sp"
+            />
+
+        <TextView
+            android:id="@+id/tv_filename"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_name2"
+            android:layout_toRightOf="@+id/iv_file"
+            android:text="IMG_1280.MOV"
+            android:textColor="@color/threeblack"
+            android:textSize="15sp"
+            />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
+
+
+

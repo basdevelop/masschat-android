@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/rl_rootview"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:background="#F5F5F5"
+              android:clipToPadding="true"
+              android:fitsSystemWindows="true"
+              android:orientation="vertical">
+
+    <include
+        android:id="@+id/activity_header"
+        layout="@layout/head_activity"
+        />
+
+    <View
+        android:id="@+id/view1"
+        style="@style/sty_divider"
+        android:layout_height="0.5dp"
+        android:layout_below="@id/activity_header"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <com.liaoinstan.springview.widget.SpringView
+                android:id="@+id/list_springview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/list_recyclerview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/window_gray"/>
+
+            </com.liaoinstan.springview.widget.SpringView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="#FFFFFF"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rl_bottom"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <ImageView
+                    android:id="@+id/iv_addmsg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="7dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="7dp"
+                    android:visibility="gone"
+                    />
+
+                <Button
+                    android:id="@+id/btn_send"
+                    android:layout_width="70dp"
+                    android:layout_height="32dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@mipmap/send_btn"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"/>
+
+                <EditText
+                    android:id="@+id/et_sendmessage"
+                    android:layout_width="fill_parent"
+                    android:layout_height="32dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="7dp"
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toLeftOf="@id/btn_send"
+                    android:layout_toRightOf="@id/iv_addmsg"
+                    android:background="@drawable/shape_bg_input"
+                    android:paddingLeft="5dp"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textSize="15sp"/>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#eee"/>
+
+        </LinearLayout>
+        <!--test-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+        <include
+            android:id="@+id/in_line1"
+            layout="@layout/message_txt_left"/>
+
+        <include
+            layout="@layout/message_txt_right"/>
+        </LinearLayout>
+        <!--test-->
+
+    </RelativeLayout>
+
+</LinearLayout>
